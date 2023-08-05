@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>To-Do List App</title>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-container">
+      <input type="text" id="task" placeholder="Add a new task">
+      <button id="addBtn" class="add-btn">Add Task</button>
+      <button id="clearBtn" class="clear-btn">Clear All</button>
+    </div>
+    <ul id="taskList" class="task-list">
+        <style>
+  /* Example styling for the task list items */
+  .task-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .task-list .task-text {
+    flex: 1;
+    margin-left: 10px;
+    /* Add a line-through style for completed tasks */
+  }
+
+  /* Example styling for buttons */
+  .add-btn,
+  .clear-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .add-btn:hover,
+  .clear-btn:hover {
+    background-color: #555;
+  }
+
+  /* Additional styles for dark mode, animations, etc. */
+</style>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
